@@ -1,7 +1,12 @@
 package questao18;
 
+import questao17.Oficinas;
+
 public class Main {
     public static void main(String[] args) {
-        System.out.println("Hello world!");
+
+        Oficinas oficina = new Oficinas();
+        Thread oficinaThread = new Thread(oficina);
+        oficinaThread.start();
     }
 }
